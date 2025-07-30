@@ -19,15 +19,15 @@ mechanism to opmize repeated query performance, improving both response speed an
 ## Objectives
 
 1. Design a Retrieval-Augmented Genera on (RAG) System 
-Build a modular, mul-layer architecture (Embedding → Search → Genera on) capable of answering 
-user ques ons from a life insurance policy PDF. 
-2. Implement Effec ve Embedding 
+Build a modular, mul-layer architecture (Embedding → Search → Generation) capable of answering 
+user questions from a life insurance policy PDF. 
+2. Implement Effective Embedding 
 Experiment with different embedding models (OpenAI & SentenceTransformers) to generate high
 quality vector representa ons of the policy document. 
 3. Build and Query a Vector Search Index Using ChromaDB 
-Store chunk embeddings in ChromaDB and retrieve relevant chunks using seman c similarity for user 
+Store chunk embeddings in ChromaDB and retrieve relevant chunks using semantic similarity for user 
 queries. 
-4. Implement a Cache-First Query Resolu on Strategy 
+4. Implement a Cache-First Query Resolution Strategy 
 Introduce a dual-layer search approach with a fast cache collec on and a fallback full-data search, 
 opmizing repeated query performance. 
 5. Integrate a Cross-Encoder Re-ranker 
@@ -39,7 +39,7 @@ generate  answers.
 Test the pipeline against at least 3 user-designed queries and measure relevance, accuracy, and 
 completeness of generated answers. 
 8. Reusability in Code Design 
-Keep future extension and code reusability while wri ng code
+Keep future extension and code reusability while writing code
 
 ## Design
 - Embedding Layer
@@ -54,10 +54,10 @@ Keep future extension and code reusability while wri ng code
 - Generation Layer
     Craft an exhaustive prompt that injects the reranked context chunks (and optional few-shot examples) into an LLM (e.g., GPT-3.5/4). 
 ## Tools and Technologies
-Python 3.10.4
-Jupyter notebook
-LLM(OpenAI GPT, sentence_transformers)
-ChromaDB(Vector DB)
+- Python 3.10.4
+- Jupyter notebook
+- LLM(OpenAI GPT, sentence_transformers)
+- ChromaDB(Vector DB)
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
