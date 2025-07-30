@@ -61,9 +61,9 @@ ChromaDB(Vector DB)
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
-## conclusions
+## Conclusions
 Developed a solution to query PDF documents using RAG implementation.
 
 
 ## Contact
-Created by Saurabh Pandey - feel free to contact me!
+Created by Saurabh Pandey(@Saurabh4Dev) - feel free to contact me!
